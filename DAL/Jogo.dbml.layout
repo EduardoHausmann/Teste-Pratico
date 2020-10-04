@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Jogo">
+  <DataContextMoniker Name="/JogoDataContext" />
+  <nestedChildShapes>
+    <classShape Id="3ce5b867-7d3e-4e9c-b584-bc4e9474b2d6" absoluteBounds="3.5, 0.875, 2, 1.3862939453124998">
+      <DataClassMoniker Name="/JogoDataContext/Jogo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="150412cd-94a2-46cd-b5e4-1fd61e4f3192" absoluteBounds="3.515, 1.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6d07407a-65c7-4a05-87c8-9687b333e2b6" absoluteBounds="0.75, 0.875, 2, 1.3862939453124998">
+      <DataClassMoniker Name="/JogoDataContext/Temporada" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dd055b75-bab3-45e4-9173-94ee98a9fc41" absoluteBounds="0.765, 1.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 1.56814697265625); (3.5 : 1.56814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/JogoDataContext/Temporada/temporadas_jogos" />
+      <nodes>
+        <classShapeMoniker Id="6d07407a-65c7-4a05-87c8-9687b333e2b6" />
+        <classShapeMoniker Id="3ce5b867-7d3e-4e9c-b584-bc4e9474b2d6" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

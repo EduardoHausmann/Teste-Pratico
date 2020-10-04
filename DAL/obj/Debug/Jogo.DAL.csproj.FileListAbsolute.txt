@@ -1,0 +1,6 @@
+C:\Users\Eduardo\Documents\GitHub\Teste Pratico\DAL\bin\Debug\DAL.dll.config
+C:\Users\Eduardo\Documents\GitHub\Teste Pratico\DAL\bin\Debug\DAL.dll
+C:\Users\Eduardo\Documents\GitHub\Teste Pratico\DAL\bin\Debug\DAL.pdb
+C:\Users\Eduardo\Documents\GitHub\Teste Pratico\DAL\obj\Debug\Jogo.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Eduardo\Documents\GitHub\Teste Pratico\DAL\obj\Debug\DAL.dll
+C:\Users\Eduardo\Documents\GitHub\Teste Pratico\DAL\obj\Debug\DAL.pdb

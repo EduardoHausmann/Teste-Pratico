@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Basquete" Class="JogoDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=EEH\SQLEXPRESS;Initial Catalog=Basquete;Integrated Security=True" SettingsObjectName="DAL.Properties.Settings" SettingsPropertyName="BasqueteConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.jogos" Member="Jogo">
+    <Type Name="Jogo">
+      <Column Name="id_jogo" Member="CodigoJogo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="pontuacao" Member="Pontuacao" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_temporada" Member="CodigoTemporada" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="temporadas_jogos" Member="Temporada" ThisKey="CodigoTemporada" OtherKey="CodigoTemporada" Type="Temporada" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.temporadas" Member="Temporada">
+    <Type Name="Temporada">
+      <Column Name="id_temporada" Member="CodigoTemporada" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="inicio" Member="Inicio" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="fim" Member="Fim" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="temporadas_jogos" Member="Jogo" ThisKey="CodigoTemporada" OtherKey="CodigoTemporada" Type="Jogo" />
+    </Type>
+  </Table>
+</Database>
