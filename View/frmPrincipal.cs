@@ -1,5 +1,4 @@
-﻿using DAL;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,21 +17,31 @@ namespace View
             InitializeComponent();
         }
 
-        private void frmPrincipal_FormClosed(object sender, FormClosedEventArgs e)
+        private void tsmTemporada_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            if (MeusFormularios.FormTemporada == null)
+                MeusFormularios.FormTemporada = new frmTemporada();
+
+            MeusFormularios.FormTemporada.Show();
+            MeusFormularios.FormTemporada.Focus();
         }
 
-        private void frmPrincipal_Load(object sender, EventArgs e)
+        private void tsmJogo_Click(object sender, EventArgs e)
         {
-            this.jogoBindingSource.DataSource = DataContextFactory.DataContext.Jogo;
-            this.temporadaBindingSource.DataSource = DataContextFactory.DataContext.Temporada;
+            if (MeusFormularios.FormJogo == null)
+                MeusFormularios.FormJogo = new frmJogo();
+
+            MeusFormularios.FormJogo.Show();
+            MeusFormularios.FormJogo.Focus();
         }
 
-        private void jogoDataGridView_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        private void tsmConsultaJogo_Click(object sender, EventArgs e)
         {
-            if (e.Value != null && e.ColumnIndex == 2)
-                e.Value = ((Temporada)e.Value).Inicio;
+            if (MeusFormularios.FormConsulta == null)
+                MeusFormularios.FormConsulta = new frmConsulta();
+
+            MeusFormularios.FormConsulta.Show();
+            MeusFormularios.FormConsulta.Focus();
         }
     }
 }

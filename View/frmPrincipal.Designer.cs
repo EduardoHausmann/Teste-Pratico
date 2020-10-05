@@ -3,14 +3,14 @@
     partial class frmPrincipal
     {
         /// <summary>
-        /// Variável de designer necessária.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Limpar os recursos que estão sendo usados.
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true se for necessário descartar os recursos gerenciados; caso contrário, false.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,112 +20,86 @@
             base.Dispose(disposing);
         }
 
-        #region Código gerado pelo Windows Form Designer
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// Método necessário para suporte ao Designer - não modifique 
-        /// o conteúdo deste método com o editor de código.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.jogoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.jogoDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lblOla = new System.Windows.Forms.Label();
-            this.lblPontuacao = new System.Windows.Forms.Label();
-            this.temporadaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.jogoBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.jogoDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.temporadaBindingSource)).BeginInit();
+            this.msPrincipal = new System.Windows.Forms.MenuStrip();
+            this.tsmCadastro = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmTemporada = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmJogo = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmConsulta = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmConsultaJogo = new System.Windows.Forms.ToolStripMenuItem();
+            this.msPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
-            // jogoBindingSource
+            // msPrincipal
             // 
-            this.jogoBindingSource.DataSource = typeof(DAL.Jogo);
+            this.msPrincipal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.msPrincipal.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmCadastro,
+            this.tsmConsulta});
+            this.msPrincipal.Location = new System.Drawing.Point(0, 0);
+            this.msPrincipal.Name = "msPrincipal";
+            this.msPrincipal.Size = new System.Drawing.Size(426, 28);
+            this.msPrincipal.TabIndex = 0;
+            this.msPrincipal.Text = "menuStrip1";
             // 
-            // jogoDataGridView
+            // tsmCadastro
             // 
-            this.jogoDataGridView.AllowUserToAddRows = false;
-            this.jogoDataGridView.AllowUserToDeleteRows = false;
-            this.jogoDataGridView.AutoGenerateColumns = false;
-            this.jogoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.jogoDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn4});
-            this.jogoDataGridView.DataSource = this.jogoBindingSource;
-            this.jogoDataGridView.Location = new System.Drawing.Point(25, 63);
-            this.jogoDataGridView.Name = "jogoDataGridView";
-            this.jogoDataGridView.ReadOnly = true;
-            this.jogoDataGridView.RowHeadersVisible = false;
-            this.jogoDataGridView.Size = new System.Drawing.Size(306, 256);
-            this.jogoDataGridView.TabIndex = 1;
-            this.jogoDataGridView.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.jogoDataGridView_CellFormatting);
+            this.tsmCadastro.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmTemporada,
+            this.tsmJogo});
+            this.tsmCadastro.Name = "tsmCadastro";
+            this.tsmCadastro.Size = new System.Drawing.Size(94, 24);
+            this.tsmCadastro.Text = "Cadastros";
             // 
-            // dataGridViewTextBoxColumn1
+            // tsmTemporada
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "CodigoJogo";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Código";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.tsmTemporada.Name = "tsmTemporada";
+            this.tsmTemporada.Size = new System.Drawing.Size(159, 24);
+            this.tsmTemporada.Text = "Temporada";
+            this.tsmTemporada.Click += new System.EventHandler(this.tsmTemporada_Click);
             // 
-            // dataGridViewTextBoxColumn2
+            // tsmJogo
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Pontuacao";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Pontuação";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.tsmJogo.Name = "tsmJogo";
+            this.tsmJogo.Size = new System.Drawing.Size(159, 24);
+            this.tsmJogo.Text = "Jogo";
+            this.tsmJogo.Click += new System.EventHandler(this.tsmJogo_Click);
             // 
-            // dataGridViewTextBoxColumn4
+            // tsmConsulta
             // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Temporada";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Temporada";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            this.tsmConsulta.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmConsultaJogo});
+            this.tsmConsulta.Name = "tsmConsulta";
+            this.tsmConsulta.Size = new System.Drawing.Size(84, 24);
+            this.tsmConsulta.Text = "Consulta";
             // 
-            // lblOla
+            // tsmConsultaJogo
             // 
-            this.lblOla.AutoSize = true;
-            this.lblOla.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOla.Location = new System.Drawing.Point(12, 9);
-            this.lblOla.Name = "lblOla";
-            this.lblOla.Size = new System.Drawing.Size(85, 20);
-            this.lblOla.TabIndex = 2;
-            this.lblOla.Text = "Olá Maria";
-            // 
-            // lblPontuacao
-            // 
-            this.lblPontuacao.AutoSize = true;
-            this.lblPontuacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPontuacao.Location = new System.Drawing.Point(12, 40);
-            this.lblPontuacao.Name = "lblPontuacao";
-            this.lblPontuacao.Size = new System.Drawing.Size(329, 20);
-            this.lblPontuacao.TabIndex = 3;
-            this.lblPontuacao.Text = "Placar dos seus jogos com melhor pontuação";
-            // 
-            // temporadaBindingSource
-            // 
-            this.temporadaBindingSource.DataSource = typeof(DAL.Temporada);
+            this.tsmConsultaJogo.Name = "tsmConsultaJogo";
+            this.tsmConsultaJogo.Size = new System.Drawing.Size(185, 24);
+            this.tsmConsultaJogo.Text = "Consultar Jogo";
+            this.tsmConsultaJogo.Click += new System.EventHandler(this.tsmConsultaJogo_Click);
             // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(713, 339);
-            this.Controls.Add(this.lblPontuacao);
-            this.Controls.Add(this.lblOla);
-            this.Controls.Add(this.jogoDataGridView);
+            this.ClientSize = new System.Drawing.Size(426, 252);
+            this.Controls.Add(this.msPrincipal);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.MainMenuStrip = this.msPrincipal;
             this.Name = "frmPrincipal";
-            this.Text = "Tela Principal";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmPrincipal_FormClosed);
-            this.Load += new System.EventHandler(this.frmPrincipal_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.jogoBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.jogoDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.temporadaBindingSource)).EndInit();
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = ".: Tela Principal :.";
+            this.msPrincipal.ResumeLayout(false);
+            this.msPrincipal.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -133,14 +107,11 @@
 
         #endregion
 
-        private System.Windows.Forms.BindingSource jogoBindingSource;
-        private System.Windows.Forms.DataGridView jogoDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.Label lblOla;
-        private System.Windows.Forms.Label lblPontuacao;
-        private System.Windows.Forms.BindingSource temporadaBindingSource;
+        private System.Windows.Forms.MenuStrip msPrincipal;
+        private System.Windows.Forms.ToolStripMenuItem tsmCadastro;
+        private System.Windows.Forms.ToolStripMenuItem tsmTemporada;
+        private System.Windows.Forms.ToolStripMenuItem tsmJogo;
+        private System.Windows.Forms.ToolStripMenuItem tsmConsulta;
+        private System.Windows.Forms.ToolStripMenuItem tsmConsultaJogo;
     }
 }
-

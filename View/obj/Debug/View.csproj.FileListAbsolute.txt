@@ -12,3 +12,6 @@ C:\Users\Eduardo\Documents\GitHub\Teste Pratico\View\obj\Debug\View.csproj.CoreC
 C:\Users\Eduardo\Documents\GitHub\Teste Pratico\View\obj\Debug\View.csproj.CopyComplete
 C:\Users\Eduardo\Documents\GitHub\Teste Pratico\View\obj\Debug\View.exe
 C:\Users\Eduardo\Documents\GitHub\Teste Pratico\View\obj\Debug\View.pdb
+C:\Users\Eduardo\Documents\GitHub\Teste Pratico\View\obj\Debug\View.frmConsulta.resources
+C:\Users\Eduardo\Documents\GitHub\Teste Pratico\View\obj\Debug\View.frmJogo.resources
+C:\Users\Eduardo\Documents\GitHub\Teste Pratico\View\obj\Debug\View.frmTemporada.resources
